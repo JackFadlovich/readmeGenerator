@@ -38,26 +38,18 @@ const questions = [
         message: 'Enter your email address:',
     }];
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) =>
+        err ? console.error(err) : console.log('README created successfully!')
+        );}
 
 // TODO: Create a function to initialize app
-function init() {}
-
+function init() {
+    inquirer.prompt(questions).then((responses) => {
+        const markdownContent = generateMarkdown(responses);
+        writeToFile('README.md', markdownContent);
+    });}
 // Function call to initialize app
-init();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+init(); 
 
 
