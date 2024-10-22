@@ -1,24 +1,44 @@
-# Professional README Generator Starter Code
+# README Generator
 
-[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+## Table of Contents
+
+- [Description](#description)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## Description
+
+The **README Generator** is a command-line application that helps developers quickly create a professional README file for their projects. This application prompts users with a series of questions to gather necessary information, then generates a structured README in Markdown format.
 
 
-AS A developer
-I WANT a README generator
-SO THAT I can quickly create a professional README for a new project
+## Technologies Used
 
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for information about my application repository
-THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-WHEN I enter my project title
-THEN this is displayed as the title of the README
-WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-WHEN I choose a license for my application from a list of options
-THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-WHEN I enter my GitHub username
-THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-WHEN I enter my email address
-THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-WHEN I click on the links in the Table of Contents
-THEN I am taken to the corresponding section of the README
+- **Frontend:**
+  - Node.js
+  - Inquirer.js (for user prompts)
+  - File System (fs module for file writing)
+
+## Features
+
+- **Interactive CLI**: Users can answer prompts to fill in their project details.
+- **Markdown Formatting**: The generated README is structured in Markdown for easy readability and use.
+- **Customization Options**: Users can provide specific information, such as project title, description, installation instructions, usage examples, and more.
+
+## Installation
+
+To set up the project locally, follow these steps.
+
+### Prerequisites
+
+Ensure you have **Node.js** and **npm** installed on your machine.
+
+### Installation Steps
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/readme-generator.git
